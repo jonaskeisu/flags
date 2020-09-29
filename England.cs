@@ -5,10 +5,8 @@ namespace flags
 {
     struct England
     {
-        static public void DrawFlag()
+        static private void DrawSegment(ConsoleColor savedBackgroundColor)
         {
-            var savedBackgroundColor = BackgroundColor;
-            // Segement 1
             BackgroundColor = ConsoleColor.White;
             Write("   ");
             BackgroundColor = ConsoleColor.Red;
@@ -17,6 +15,13 @@ namespace flags
             Write("   ");
             BackgroundColor = savedBackgroundColor;
             WriteLine();
+        }
+
+        static public void DrawFlag()
+        {
+            var savedBackgroundColor = BackgroundColor;
+            // Segement 1
+            DrawSegment(savedBackgroundColor);
 
             // Segment 2 
             BackgroundColor = ConsoleColor.Red;
@@ -25,14 +30,7 @@ namespace flags
             WriteLine();
 
             // Segment 3
-            BackgroundColor = ConsoleColor.White;
-            Write("   ");
-            BackgroundColor = ConsoleColor.Red;
-            Write(" ");
-            BackgroundColor = ConsoleColor.White;
-            Write("   ");
-            BackgroundColor = savedBackgroundColor;
-            WriteLine();
+            DrawSegment(savedBackgroundColor);
         }
     }
 }
