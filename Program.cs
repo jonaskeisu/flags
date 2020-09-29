@@ -7,6 +7,7 @@ namespace flags
         static void Main(string[] args)
         {
             var nation = args[0];
+            Console.WriteLine($"Flaggan för nationen {nation} är:");
             switch(nation) {
                 case "sverige":
                     Sweden.DrawFlag();
