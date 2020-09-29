@@ -12,6 +12,9 @@ namespace flags
                 case "sverige":
                     Sweden.DrawFlag();
                     break;
+                case "danmark":
+                    Denmark.DrawFlag();
+                    break;
                 default:
                     Console.WriteLine($"Okänd nation: {nation}");
                     break;
