@@ -7,7 +7,7 @@ namespace flags
     {
         static public void DrawFlag()
         {
-            CrossFlag.DrawFlag(ConsoleColor.Red, ConsoleColor.White);
+            CrossFlag.DrawFlag(ConsoleColor.White, ConsoleColor.Red);
         }
     }
 }
