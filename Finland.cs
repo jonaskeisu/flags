@@ -13,7 +13,7 @@ namespace flags
             Write("   ");
             BackgroundColor = ConsoleColor.Blue;
             Write(" ");
-            BackgroundColor = ConsoleColor.Blue;
+            BackgroundColor = ConsoleColor.White;
             Write("   ");
             BackgroundColor = savedBackgroundColor;
             WriteLine();
